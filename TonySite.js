@@ -1,3 +1,1 @@
-function wtf(){
-
-}
+document.getElementsByClassName("------").addEventListener("click") 
