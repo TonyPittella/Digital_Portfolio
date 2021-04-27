@@ -7,6 +7,8 @@
 /* .LeftListDrop was made special because the drop already had a class and there was a reference issue */
 #LeftListDrop{
     float: left;
+/* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    /* font-style: Comic Sans MS; */
 }
 /* used to be ul */
 #navBarList{
@@ -23,6 +25,8 @@
 }
 /* .LeftList used to be li but that effects all li */
 .LeftList a, .dropbtn {
+    font-family: Comic Sans MS;
+    /* this guy up there changes main nav bar */
     display: inline-block;
     color: #1BF522;
     text-align: center;
@@ -31,29 +35,57 @@
 }
 .LeftList a:hover, .dropdown:hover .dropbtn {
     background-color: #1BF522;
-    color: #000000;
+    color: #333;
 }
 .LeftList .dropdown {
     display: inline-block;
 }
 .dropdown-content {
+/* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    /* font-style: Comic Sans MS; */
     display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
 }
+
 .dropdown-content a {
+/* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    /* font-style: Comic Sans MS; */
     color: #1BF522;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
-.dropdown-content a:hover {background-color: #1AEBD2;}
+
+
+#PATH_A { 
+    /* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    font-style: Comic Sans MS;
+}
+
+#PATH_B {
+    /* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    font-style: Comic Sans MS;
+}
+
+
+.dropdown-content a:hover {background-color: #1BF522;
+    color: #333;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-  
+H2{
+    font-style: Trajan;
+    font-variant: small-caps;
+    font-weight:800;
+    text-shadow: 2px 2px 5px #3EF7BD;
+    /* text-transform: capitalize; */
+    color: #2CB086;
+}
