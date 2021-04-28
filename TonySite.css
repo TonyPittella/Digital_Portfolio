@@ -20,10 +20,10 @@
 }
 /* important only way i could get it to stick */
 .nav-bar{
-    position:fixed;
+    position: fixed;
     top: 0;
 }
-/* .LeftList used to be li but that effects all li */
+/* .LeftList used to be li but that effects all li  CHANGES FONT STYLE*/
 .LeftList a, .dropbtn {
     font-family: Comic Sans MS;
     /* this guy up there changes main nav bar */
@@ -36,6 +36,7 @@
 .LeftList a:hover, .dropdown:hover .dropbtn {
     background-color: #1BF522;
     color: #333;
+    /* font-family: Comic Sans MS; */
 }
 .LeftList .dropdown {
     display: inline-block;
@@ -49,7 +50,6 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
 }
 
 .dropdown-content a {
@@ -61,6 +61,19 @@
     display: block;
     text-align: left;
 }
+
+.dropdown-content a:hover {
+    background-color: #1BF522;
+    color: #333;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
 
 
 #PATH_A { 
@@ -74,12 +87,6 @@
 }
 
 
-.dropdown-content a:hover {background-color: #1BF522;
-    color: #333;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 H2{
     font-style: Trajan;

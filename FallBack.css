@@ -1,0 +1,199 @@
+
+
+/* .LeftList used to be li but that effects all li */
+.LeftList {
+    float: left;
+}
+/* .LeftListDrop was made special because the drop already had a class and there was a reference issue */
+#LeftListDrop{
+    float: left;
+/* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    /* font-style: Comic Sans MS; */
+}
+/* used to be ul */
+#navBarList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+/* important only way i could get it to stick */
+.nav-bar{
+    position:fixed;
+    top: 0;
+}
+/* .LeftList used to be li but that effects all li */
+.LeftList a, .dropbtn {
+    font-family: Comic Sans MS;
+    /* this guy up there changes main nav bar */
+    display: inline-block;
+    color: #1BF522;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.LeftList a:hover, .dropdown:hover .dropbtn {
+    background-color: #1BF522;
+    color: #333;
+}
+.LeftList .dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+/* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    /* font-style: Comic Sans MS; */
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+/* if i add a font-style here it does nothing for the drop down which is the desired effect */
+    /* font-style: Comic Sans MS; */
+    color: #1BF522;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #1BF522;
+    color: #333;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* OLD CODE */
+.BACK{
+    background-color: #d7d0c0;
+}
+img {
+    max-width: 20%;
+    height: auto;
+    float: right;
+}
+#mainHEAD{
+    background-color: #B4D1D6;
+    color: #30868F;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 280px;
+    border: #30868F;
+    border-radius: 70px 10px;
+
+} 
+.titleHEAD{
+    background-color: #A195FC;
+    color: #51548D;
+    padding: 1px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 340px;
+    border: #A195FC;
+    border-radius: 70px 10px;
+}
+.navBAR{
+    background-color: #a49470;
+    float:right;
+    padding: 10px;
+    margin: auto;
+    width: auto;
+}
+.subHEAD{
+    text-align: left;
+    background-color: #228F8B;
+    color: #64D6D3;
+    padding: 0px;
+    width: 190px;
+    text-align: center;
+    border-radius: 10px  65px;
+}
+.mainBODY{
+     color: #1A367A;
+     padding: 0px;
+}
+
+@media screen and (max-width:600px){
+    .BACK{
+        background-color: #ccc8b2;
+    }
+
+}
+
+
+/* OG nava bar */
+.RightList {
+    float: right;
+}
+#RightListDrop{
+    float: right;
+}
+
+#NBL{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.ResumeNav{
+/* got something here. this moved the menue and home to the right */
+    position: right;
+    top: 0;
+}
+.RightList a, .dropbtnR {
+    font-family: Comic Sans MS;
+    /* this guy up there changes main nav bar */
+    display: inline-block;
+    color: #32B8FC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.RightList a:hover, .dropdownR:hover .dropbtnR {
+    background-color: #32B8FC;
+    color: #333;
+    /* font-family: Comic Sans MS; */
+}
+.RightList .dropdownR {
+    display: inline-block;
+}
+
+.dropdown-contentR {
+    /* if i add a font-style here it does nothing for the drop down which is the desired effect */
+        /* font-style: Comic Sans MS; */
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 0;
+    /* i made sure the index was changed as to not effect og nav bar */
+}
+.dropdown-contentR a {
+    /* if i add a font-style here it does nothing for the drop down which is the desired effect */
+        /* font-style: Comic Sans MS; */
+        color: #32B8FC;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+}
+
+.dropdown-contentR a:hover {
+    background-color: #32B8FC;
+    color: #333;
+}
+.dropdownR:hover .dropdown-contentR {
+    display: block;
+}
