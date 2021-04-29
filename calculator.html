@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="calculator.css">
+
+    <title>Wanna do some Maths?</title>
+</head>
+
+<body class="background">
+  <div class="top">
+    <div class="nav-bar">
+        <ul id="navBarList" >
+            <li class="LeftList" ><a href="/Users/tonypittella/Desktop/Digital_Portfolio/TonySite.html">Home</a></li>
+            <li class="LeftList" ><a href="/Users/tonypittella/Desktop/Digital_Portfolio/whoU.html">Who is Tony?</a></li>
+            <li class="LeftList" ><a href="/Users/tonypittella/Desktop/Digital_Portfolio/school.html">School</a></li>
+            <li class="LeftList" ><a href="/Users/tonypittella/Desktop/Digital_Portfolio/timeline.html">Timeline</a></li>           
+            <li id="LeftListDrop"  class="dropdown">           
+              <a href="javascript:void(0)" id="PATH_B" class="dropbtn">Projects</a>
+            <!-- IF I ADD class="LeftList" i will get they style i want but lose the drop down function -->
+              <div class="dropdown-content">
+                  <a  href="/Users/tonypittella/Desktop/Digital_Portfolio/_Projects/Tony_Resume/Tony_resume.html"> Resume</a>
+                  <a href="/Users/tonypittella/Desktop/Digital_Portfolio/_Projects/ChooseYourStarter/index.html">Choose Your Starter</a>
+                  <a href="/Users/tonypittella/Desktop/Digital_Portfolio/_Projects/DiceGame/dice.html">Dice</a>
+                  <a href="/Users/tonypittella/Desktop/Digital_Portfolio/_Projects/MyTicTacToe/TTT.html">Tic Tac Toe</a>
+                  <a href="/Users/tonypittella/Desktop/Digital_Portfolio/_Projects/Caculator/calculator.html">Calculator</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<h6>.</h6>
+
+<div></div>
+
+    <div class="calculator">
+
+        <input type="text" class="screen" value="" disabled />
+        
+        <div class="cal_keys">
+          
+          <button class="button" class="operator" value="+">+</button>
+          <button class="button" class="operator" value="-">-</button>
+          <button class="button" class="operator" value="*">&times;</button>
+          <button class="button" class="operator" value="/">&divide;</button>
+      
+          <button class="button" value="7">7</button>
+          <button class="button" value="8">8</button>
+          <button class="button" value="9">9</button>
+      
+      
+          <button class="button" value="4">4</button>
+          <button class="button" value="5">5</button>
+          <button class="button" value="6">6</button>
+      
+      
+          <button class="button" value="1">1</button>
+          <button class="button" value="2">2</button>
+          <button class="button" value="3">3</button>
+      
+      
+          <button class="button" value="0">0</button>
+          <button class="button" class="decimal" value=".">.</button>
+          <button class="clear" class="button"  value="all-clear">AC</button>
+      
+          <button class="equal" class="button"  value="=">=</button>
+      
+        </div>
+      </div>
+
+     
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
